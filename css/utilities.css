@@ -1,8 +1,9 @@
 :root {
-  --reaction-col: hsl(0, 100%, 67%);
-  --memory-col: hsl(39, 100%, 56%);
-  --verbal-col: hsl(166, 100%, 37%);
-  --visual-col: hsl(234, 85%, 45%);
+  /* Colors in HSL */
+  --reaction-col: 0, 100%, 67%;
+  --memory-col: 39, 100%, 56%;
+  --verbal-col: 166, 100%, 37%;
+  --visual-col: 234, 85%, 45%;
 
   --card-bg-col-one: hsl(252, 100%, 67%);
   --card-bg-col-two: hsl(241, 81%, 54%);
@@ -33,9 +34,11 @@
 .btn {
   display: block;
   width: 100%;
-  padding: 0.75rem 0;
+  padding: 1rem 0;
   background-color: var(--dark-gray-blue);
   color: var(--white);
+  font-family: inherit;
+  font-weight: var(--regular-weight);
   border: none;
   border-radius: 50px;
   text-align: center;

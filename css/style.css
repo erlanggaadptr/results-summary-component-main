@@ -19,50 +19,100 @@ main {
 }
 
 .card {
+  max-width: 45rem;
+  margin: 2rem;
   border-radius: 20px;
   box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.25);
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
 }
 
 .card .your-result, 
 .card .summary {
   width: 50%;
-  padding: 2rem 3rem;
+  padding: 3rem 2.5rem;
 }
 
 .card .your-result {
-  background-image: radial-gradient(var(--card-bg-col-one), var(--card-bg-col-two));
-  color: var(--white);
+  background-image: linear-gradient(var(--card-bg-col-one), var(--card-bg-col-two));
+  color: var(--light-lavender);
   border-radius: 20px;
   text-align: center;
   align-items: center;
   justify-content: space-between;
-  gap: 1rem;
 }
 
 .card .your-result .overall-score-wrapper {
   background-image: linear-gradient(var(--circle-col-one), var(--circle-col-two));
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
   align-items: center;
   justify-content: center;
+  font-size: 1rem;
+}
+
+.card .your-result .overall-score-wrapper .overall-score {
+  color: var(--white);
+  font-size: 5rem;
+  font-weight: var(--extrabold-weight);
+}
+
+.card .your-result .score-desc {
+  color: var(--white);
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
 .card .summary {
   align-items: flex-start;
   justify-content: space-between;
+  gap: 2rem;
 }
 
 .card .summary .scores-wrapper {
   width: 100%;
+  gap: 1rem;
+  font-weight: var(--bold-weight);
 }
 
 .card .summary .scores-wrapper .reaction-score, 
 .card .summary .scores-wrapper .memory-score, 
 .card .summary .scores-wrapper .verbal-score, 
 .card .summary .scores-wrapper .visual-score {
+  padding: 0.75rem;
+  border-radius: 10px;
   align-items: center;
   justify-content: space-between;
+}
+
+.card .summary .scores-wrapper .score-name {
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.card .summary .scores-wrapper .reaction-score {
+  background-color: hsla(var(--reaction-col), 0.10);
+  color: hsl(var(--reaction-col));
+}
+.card .summary .scores-wrapper .memory-score {
+  background-color: hsla(var(--memory-col), 0.10);
+  color: hsl(var(--memory-col));
+}
+.card .summary .scores-wrapper .verbal-score {
+  background-color: hsla(var(--verbal-col), 0.10);
+  color: hsl(var(--verbal-col));
+}
+.card .summary .scores-wrapper .visual-score {
+  background-color: hsla(var(--visual-col), 0.10);
+  color: hsl(var(--visual-col));
+}
+
+.card .summary .scores-wrapper .score-number {
+  color: hsl(224, 30%, 57%);
+}
+
+.card .summary .scores-wrapper .score-number .score {
+  color: var(--dark-gray-blue);
 }
