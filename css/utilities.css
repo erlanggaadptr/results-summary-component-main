@@ -4,10 +4,10 @@
   --verbal-col: hsl(166, 100%, 37%);
   --visual-col: hsl(234, 85%, 45%);
 
-  --light-slate-blue: hsl(252, 100%, 67%);
-  --light-royal-blue: hsl(241, 81%, 54%);
-  --violet-blue: hsla(256, 72%, 46%, 1);
-  --persian-blue: hsla(241, 72%, 46%, 0);
+  --card-bg-col-one: hsl(252, 100%, 67%);
+  --card-bg-col-two: hsl(241, 81%, 54%);
+  --circle-col-one: hsla(256, 72%, 46%, 1);
+  --circle-col-two: hsla(241, 72%, 46%, 0);
 
   --white: hsl(0, 0%, 100%);
   --pale-blue: hsl(221, 100%, 96%);
@@ -36,6 +36,7 @@
   padding: 0.75rem 0;
   background-color: var(--dark-gray-blue);
   color: var(--white);
+  border: none;
   border-radius: 50px;
   text-align: center;
   cursor: pointer;

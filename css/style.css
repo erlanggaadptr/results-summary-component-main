@@ -5,9 +5,55 @@
 }
 
 body {
-  font-size: var(--font-family);
+  font-family: var(--font-family);
 }
 
 p {
   font-size: var(--p-font-size);
+}
+
+main {
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  border-radius: 20px;
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.25);
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card .your-result, 
+.card .summary {
+  width: 50%;
+  padding: 2rem 3rem;
+}
+
+.card .your-result {
+  background-image: radial-gradient(var(--card-bg-col-one), var(--card-bg-col-two));
+  color: var(--white);
+  border-radius: 20px;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.card .your-result .overall-score-wrapper {
+  background-image: linear-gradient(var(--circle-col-one), var(--circle-col-two));
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  align-items: center;
+  justify-content: center;
+}
+
+.card .summary .scores-wrapper .reaction-score, 
+.card .summary .scores-wrapper .memory-score, 
+.card .summary .scores-wrapper .verbal-score, 
+.card .summary .scores-wrapper .visual-score {
+  align-items: center;
+  justify-content: space-between;
 }
