@@ -50,6 +50,15 @@ main {
   justify-content: center;
 }
 
+.card .summary {
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.card .summary .scores-wrapper {
+  width: 100%;
+}
+
 .card .summary .scores-wrapper .reaction-score, 
 .card .summary .scores-wrapper .memory-score, 
 .card .summary .scores-wrapper .verbal-score, 
