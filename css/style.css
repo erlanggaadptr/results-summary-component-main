@@ -40,6 +40,7 @@ main {
   text-align: center;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
 }
 
 .card .your-result .overall-score-wrapper {
@@ -67,7 +68,7 @@ main {
 .card .summary {
   align-items: flex-start;
   justify-content: space-between;
-  gap: 2rem;
+  gap: 1.5rem;
 }
 
 .card .summary .scores-wrapper {
@@ -115,4 +116,25 @@ main {
 
 .card .summary .scores-wrapper .score-number .score {
   color: var(--dark-gray-blue);
+}
+
+@media screen and (max-width: 625px) {
+  .card {
+    margin: 0;
+    flex-direction: column;
+    border-radius: 0px;
+    box-shadow: none;
+    align-items: stretch;
+
+  }
+  
+  .card .your-result, 
+  .card .summary {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .card .your-result {
+    border-radius: 0 0 20px 20px;
+  }
 }
